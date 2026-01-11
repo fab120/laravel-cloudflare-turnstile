@@ -1,12 +1,12 @@
 {
-    "name": "ryangjchandler/laravel-cloudflare-turnstile",
-    "description": "A simple package to help integrate Cloudflare Turnstile.",
+    "name": "fab120/laravel-cloudflare-turnstile",
+    "description": "A simple package to help integrate Cloudflare Turnstile. Based on ryangjchandler/laravel-cloudflare-turnstile",
     "keywords": [
         "ryangjchandler",
         "laravel",
         "laravel-cloudflare-turnstile"
     ],
-    "homepage": "https://github.com/ryangjchandler/laravel-cloudflare-turnstile",
+    "homepage": "https://github.com/fab120/laravel-cloudflare-turnstile",
     "license": "MIT",
     "authors": [
         {
@@ -17,16 +17,20 @@
     ],
     "require": {
         "php": "^8.2",
-        "spatie/laravel-package-tools": "^1.13.0",
-        "illuminate/contracts": "^11.0|^12.0"
+        "illuminate/contracts": "^10.0|^11.0|^12.0",
+        "laravel/framework": "10.*",
+        "spatie/laravel-package-tools": "^1.13.0"
+    },
+    "replace": {
+        "ryangjchandler/laravel-cloudflare-turnstile": "self.version"
     },
     "require-dev": {
         "laravel/pint": "^1.0",
-        "nunomaduro/collision": "^8.0",
-        "larastan/larastan": "^3.1",
-        "orchestra/testbench": "^9.0|^10.0",
-        "pestphp/pest": "^3.7",
-        "pestphp/pest-plugin-laravel": "^3.1",
+        "nunomaduro/collision": "^7.0|^8.0",
+        "larastan/larastan": "^2.0|^3.1",
+        "orchestra/testbench": "^8.0|^9.0|^10.0",
+        "pestphp/pest": "^2.34|^3.7",
+        "pestphp/pest-plugin-laravel": "^2.4|^3.1",
         "phpstan/extension-installer": "^1.1",
         "phpstan/phpstan-deprecation-rules": "^1.0|^2.0",
         "phpstan/phpstan-phpunit": "^1.0|^2.0",
